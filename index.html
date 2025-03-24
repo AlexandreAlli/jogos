@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Advanced-Alt Japan</title>
+</head>
+<body>
+    <h1>Dados do Projeto</h1>
+    <pre id="json-data"></pre>
+
+    <script>
+        // Carrega o JSON dinamicamente
+        fetch('jpgpu.json')
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById('json-data').textContent = 
+                    JSON.stringify(data, null, 2);
+            });
+    </script>
+</body>
+</html>
