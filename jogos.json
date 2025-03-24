@@ -4,7 +4,115 @@
             "jogo": "Lituânia x Finlândia",
             "data": "24/03",
             "horario": "14:00",
-            "ondepassa": "DISNEY+ PREMIUM / UEFA.TV"
+            "ondepassa": "Sportv 2"
+        }
+        {
+            "jogo": "Inglaterra x Letônia",
+            "data": "24/03",
+            "horario": "16:45",
+            "ondepassa": "Sportv"
+        }
+        {
+            "jogo": "San Marino x Romênia",
+            "data": "24/03",
+            "horario": "16:45",
+            "ondepassa": "Sportv 3"
+        }
+        {
+            "jogo": "Polônia x Malta",
+            "data": "24/03",
+            "horario": "16:45",
+            "ondepassa": "ESPN e Disney+"
+        }
+        {
+            "jogo": "Albânia x Andorra",
+            "data": "24/03",
+            "horario": "16:45",
+            "ondepassa": "ESPN 4 e Disney+"
+        }
+        {
+            "jogo": "Bósnia-Herzegovina x Chipre",
+            "data": "24/03",
+            "horario": "16:45",
+            "ondepassa": "Disney+"
+        }
+        {
+            "jogo": "Japão x Arábia Saudita",
+            "data": "25/03",
+            "horario": "7:35",
+            "ondepassa": "ESPN 4 e Disney+"
+        }
+        {
+            "jogo": "Coreia do Sul x Jordânia",
+            "data": "25/03",
+            "horario": "8:00",
+            "ondepassa": "Disney+"
+        }
+        {
+            "jogo": "China x Austrália",
+            "data": "25/03",
+            "horario": "8:00",
+            "ondepassa": "Disney+"
+        }
+        {
+            "jogo": "Irã x Uzbequistão",
+            "data": "25/03",
+            "horario": "13:00",
+            "ondepassa": "ESPN 3 e Disney+"
+        }
+        {
+            "jogo": "Moldávia x Estônia",
+            "data": "25/03",
+            "horario": "14:00",
+            "ondepassa": "ESPN 4 e Disney+"
+        }
+        {
+            "jogo": "Suécia x Irlanda do Norte",
+            "data": "25/03",
+            "horario": "15:00",
+            "ondepassa": "SPORTV 2 e Disney+"
+        }
+        {
+            "jogo": "Egito x Serra Leoa",
+            "data": "25/03",
+            "horario": "16:00",
+            "ondepassa": "CazéTV e FIFA+"
+        }
+        {
+            "jogo": "Bolívia x Uruguai",
+            "data": "25/03",
+            "horario": "17:00",
+            "ondepassa": "Sportv"
+        }
+        {
+            "jogo": "Marrocos x Tanzânia",
+            "data": "25/03",
+            "horario": "18:30",
+            "ondepassa": "CazéTV e FIFA+"
+        }
+        {
+            "jogo": "Argentina x Brasil",
+            "data": "25/03",
+            "horario": "21:00",
+            "ondepassa": "Globo e Sportv"
+        }
+        {
+            "jogo": "Colômbia x Paraguai",
+            "data": "25/03",
+            "horario": "21:00",
+            "ondepassa": "Sportv 2"
+        }
+        {
+            "jogo": "Chile x Equador",
+            "data": "25/03",
+            "horario": "21:00",
+            "ondepassa": "Sportv 3"
+        }
+        {
+            "jogo": "Venezuela x Peru",
+            "data": "25/03",
+            "horario": "21:00",
+            "ondepassa": "Sportv 4"
         }
     ]
 }
