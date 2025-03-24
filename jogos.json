@@ -1,1 +1,10 @@
-Testando
+{
+    "jogos": [
+        {
+            "jogo": "Lituânia x Finlândia",
+            "data": "24/03",
+            "horario": "14:00",
+            "ondepassa": "DISNEY+ PREMIUM / UEFA.TV"
+        }
+    ]
+}
