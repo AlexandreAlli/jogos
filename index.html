@@ -34,23 +34,18 @@
 </head>
 <body>
     <h1>⚽ Jogos e Transmissões</h1>
-    <div id="jogos"></div>
-
-    <script>
-        fetch('jogos.json')
-            .then(response => response.json())
-            .then(data => {
-                const jogosDiv = document.getElementById('jogos');
-                data.jogos.forEach(jogo => {
-                    jogosDiv.innerHTML += `
-                        <div class="jogo">
-                            <div class="data-hora">🗓️ ${jogo.data} ⏰ ${jogo.horario}</div>
-                            <div class="times">⚽ ${jogo.jogo}</div>
-                            <div class="transmissao">📺 ${jogo.ondepassa}</div>
-                        </div>
-                    `;
-                });
-            });
-    </script>
+    <div id="jogos">
+        <!-- Aqui os jogos serão listados diretamente, sem JavaScript -->
+        <div class="jogo">
+            <div class="data-hora">🗓️ 20/03/2024 ⏰ 21:30</div>
+            <div class="times">⚽ Flamengo x Fluminense</div>
+            <div class="transmissao">📺 Globo, Premiere</div>
+        </div>
+        <div class="jogo">
+            <div class="data-hora">🗓️ 20/03/2024 ⏰ 19:00</div>
+            <div class="times">⚽ São Paulo x Palmeiras</div>
+            <div class="transmissao">📺 Premiere</div>
+        </div>
+    </div>
 </body>
 </html>
