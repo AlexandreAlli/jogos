@@ -1,20 +1,79 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 <head>
-    <title>Advanced-Alt Japan</title>
+    <meta charset="UTF-8">
+    <title>Transmissões de Jogos</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+    </style>
 </head>
 <body>
-    <h1>Dados do Projeto</h1>
-    <pre id="json-data"></pre>
+    <table>
+        <thead>
+            <tr>
+                <th>Jogo</th>
+                <th>Data</th>
+                <th>Horário</th>
+                <th>Onde Passa</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Aqui você cola os dados -->
+            <tr>
+                <td>Lituânia x Finlândia</td>
+                <td>24/03</td>
+                <td>14:00</td>
+                <td>DISNEY+ PREMIUM / UEFA.TV</td>
+            </tr>
+        </tbody>
+    </table>
 
     <script>
-        // Carrega o JSON dinamicamente
-        fetch('jpgpu.json')
-            .then(response => response.json())
-            .then(data => {
-                document.getElementById('json-data').textContent = 
-                    JSON.stringify(data, null, 2);
+        // Script para converter a tabela em JSON
+        function tabelaParaJson() {
+            const tabela = document.querySelector('table');
+            const linhas = tabela.querySelectorAll('tbody tr');
+            const jogos = [];
+
+            linhas.forEach(linha => {
+                const colunas = linha.querySelectorAll('td');
+                jogos.push({
+                    "jogo": colunas[0].textContent,
+                    "data": colunas[1].textContent,
+                    "horario": colunas[2].textContent,
+                    "ondepassa": colunas[3].textContent
+                });
             });
+
+            return {
+                "ultima_atualizacao": new Date().toISOString(),
+                "jogos": jogos
+            };
+        }
+
+        // Botão para gerar o JSON
+        const botao = document.createElement('button');
+        botao.textContent = 'Gerar JSON';
+        botao.onclick = () => {
+            const json = tabelaParaJson();
+            console.log(JSON.stringify(json, null, 2));
+        };
+        document.body.appendChild(botao);
     </script>
 </body>
 </html>
